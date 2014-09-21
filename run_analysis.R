@@ -3,11 +3,11 @@ library(reshape2)
 setwd("C:/Users/João/Documents/Coursera/3.getdata/project")
 
 if(!file.exists("./UCI HAR Dataset")){
-fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl, destfile = "./projectdata.zip")
-fname = unzip("./projectdata.zip", list=TRUE)$Name[1]
-unzip("./projectdata.zip",exdir = "abc", overwrite=TRUE)
-list.files()
+        fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+        download.file(fileUrl, destfile = "./projectdata.zip")
+        fname = unzip("./projectdata.zip", list=TRUE)$Name[1]
+        unzip("./projectdata.zip",exdir = "abc", overwrite=TRUE)
+        list.files()
 }
 
 ##
