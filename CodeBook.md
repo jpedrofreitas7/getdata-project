@@ -34,7 +34,11 @@ For each record in the dataset it is provided:
 * subject (An identifier of the subject who carried out the experiment.)
 * activity (Activity label.)
 
-### Continuous Variables (Average of each variable for each activity and each subject)
+### Continuous Variables 
+
+1. Features are normalized and bounded within [-1,1].
+2. Each feature vector is a row on the text file
+3. Average of each variable for each activity and each subject.
 
 * tbodyaccmeanx, tbodyaccmeany, tbodyaccmeanz, tbodyaccstdx, tbodyaccstdy, tbodyaccstdz,
 * tgravityaccmeanx, tgravityaccmeany, tgravityaccmeanz, tgravityaccstdx, tgravityaccstdy, tgravityaccstdz,
