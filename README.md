@@ -38,7 +38,7 @@ For each record in the dataset it is provided:
 #### Categorical Variables
 
 * subject (An identifier of the subject who carried out the experiment.)
-* activity (Its activity label.)
+* activity (Activity label.)
 
 #### Continuous Variables (Average of each variable for each activity and each subject)
 
