@@ -37,7 +37,7 @@ For each record in the dataset it is provided:
 ### Continuous Variables 
 
 1. Features are normalized and bounded within [-1,1].
-2. Each feature vector is a row on the text file
+2. Each feature vector is a row on the text file.
 3. Average of each variable for each activity and each subject.
 
 * tbodyaccmeanx, tbodyaccmeany, tbodyaccmeanz, tbodyaccstdx, tbodyaccstdy, tbodyaccstdz,
