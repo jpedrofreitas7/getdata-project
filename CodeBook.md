@@ -1,6 +1,6 @@
 # Code Book
 
-This is the code book of the `tidyHAR.txt` data set created by the scrip `run_analysis.R`
+This is the code book of the `tidyHAR.txt` data set created by the scrip `run_analysis.R` with the Human Activity Recognition Using Smartphones Data Set from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
 ## Background (UCI HAR Dataset)
 
@@ -20,6 +20,10 @@ The `tidyHAR.txt` includes the average of each variable for each activity and ea
 
 ## Variables List
 
+1. Features are normalized and bounded within [-1,1].
+2. Each feature vector is a row on the text file.
+3. Average of each variable for each activity and each subject.
+
 For each record in the dataset it is provided: 
 
 * Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
@@ -35,10 +39,6 @@ For each record in the dataset it is provided:
 * activity (Activity label.)
 
 ### Continuous Variables 
-
-1. Features are normalized and bounded within [-1,1].
-2. Each feature vector is a row on the text file.
-3. Average of each variable for each activity and each subject.
 
 * tbodyaccmeanx, tbodyaccmeany, tbodyaccmeanz, tbodyaccstdx, tbodyaccstdy, tbodyaccstdz,
 * tgravityaccmeanx, tgravityaccmeany, tgravityaccmeanz, tgravityaccstdx, tgravityaccstdy, tgravityaccstdz,
