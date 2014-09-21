@@ -8,6 +8,12 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals. Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm. 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing. (Note the 'f' to indicate frequency domain signals). 
+
 ## Data Set Information
 
 The `tidyHAR.txt` includes the average of each variable for each activity and each subject. Prefix 't' to denote time and 'f' to indicates frequency domain signals. For more information refer to the UCI HAR Dataset `feature_info.txt`.
@@ -17,10 +23,11 @@ The `tidyHAR.txt` includes the average of each variable for each activity and ea
 For each record in the dataset it is provided: 
 
 * Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
-* Triaxial Angular velocity from the gyroscope. 
-* A 561-feature vector with time and frequency domain variables. 
+* Triaxial Angular velocity from the gyroscope.
 * Its activity label. 
 * An identifier of the subject who carried out the experiment.
+* Mean and standard deviation of time and frequency domain variables 
+* Average of each variable for each activity and each subject 
 
 ### Categorical Variables
 
